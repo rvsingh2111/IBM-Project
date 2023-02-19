@@ -1,0 +1,74 @@
+<div class="wrapper">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example2" class="table table-bordered table-hover" data-page-length='10'>
+                    <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>UID</th>
+                      <th>Blend Name</th>
+                      <th>Origin</th>
+                      <th>Variety</th>
+                      <th>Notes</th>
+                      <th>Intensifier</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor = "let value of result">
+                      <td>{{value.id}}</td>
+                      <td>{{value.uid}}</td>
+                      <td>{{value.blend_name}}</td>
+                      <td>{{value.origin}}</td>
+                      <td>{{value.variety}}</td>
+                      <td>{{value.notes}}</td>
+                      <td>{{value.intensifier}}</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>ID</th>
+                        <th>UID</th>
+                        <th>Blend Name</th>
+                        <th>Origin</th>
+                        <th>Variety</th>
+                        <th>Notes</th>
+                        <th>Intensifier</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+  
+   
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+  
+  
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  
