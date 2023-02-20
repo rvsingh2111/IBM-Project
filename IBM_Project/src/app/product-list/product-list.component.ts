@@ -17,9 +17,10 @@ export class ProductListComponent implements OnInit,AfterViewInit{
   
   data:any= [];
   result:any = [];
-  product$ = this.store.select('product');
+  products$ = this.store.select('product');
 
   ngAfterViewInit () {
+    this.cdr.detectChanges();
     $('#example2').DataTable({
       "paging": true,
       "lengthChange": false,
@@ -34,12 +35,11 @@ export class ProductListComponent implements OnInit,AfterViewInit{
   }
 
   ngOnInit() {
+    // this.store.dispatch(getProducts());
     this.getData();
-    this.cdr.detectChanges();
   }
 
   getData() {
-    // this.store.dispatch(getProducts());
     this.result = productData;
   }
 
